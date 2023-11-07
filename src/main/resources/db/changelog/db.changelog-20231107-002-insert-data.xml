@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet id="bagaswara2" author="Bayu Bagus Bagaswara">
+<!--        delete semua data di table employees -->
+<!--        kalau boolean menggunakan valueNumeric -->
+<!--        <delete tableName="employees">-->
+<!--        </delete>-->
+        <sql>
+            DELETE FROM EMPLOYEES;
+        </sql>
+        <insert tableName="employees">
+            <column name="name" value="Albert"/>
+            <column name="email" value="albert@mail.com"/>
+            <column name="active" valueNumeric="1"/>
+        </insert>
+        <insert tableName="employees">
+            <column name="name" value="Newton"/>
+            <column name="email" value="newton@mail.com"/>
+            <column name="active" valueNumeric="1"/>
+        </insert>
+        <insert tableName="employees">
+            <column name="name" value="Tesla"/>
+            <column name="email" value="tesla@mail.com"/>
+            <column name="active" valueNumeric="1"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>
