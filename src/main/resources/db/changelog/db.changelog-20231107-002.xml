@@ -7,13 +7,9 @@
                 http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
 
     <changeSet id="bagaswara2" author="Bayu Bagus Bagaswara">
-<!--        delete semua data di table employees -->
-<!--        kalau boolean menggunakan valueNumeric -->
-<!--        <delete tableName="employees">-->
-<!--        </delete>-->
-        <sql>
-            DELETE FROM EMPLOYEES;
-        </sql>
+        <!-- DELETE ALL DATA EMPLOYEE -->
+        <sqlFile path="../../sql/V20231107_003_Delete_All_Data_Employees.sql" relativeToChangelogFile="true"/>
+
         <insert tableName="employees">
             <column name="name" value="Albert"/>
             <column name="email" value="albert@mail.com"/>

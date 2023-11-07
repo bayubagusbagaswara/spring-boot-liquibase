@@ -13,6 +13,7 @@
         <sql>
             DELETE FROM EMPLOYEES WHERE EMAIL = 'newton@mail.com'
         </sql>
+<!--        <sqlFile path="path/to/delete_data.sql" relativeToChangelogFile="true"/>-->
     </changeSet>
 
 </databaseChangeLog>
