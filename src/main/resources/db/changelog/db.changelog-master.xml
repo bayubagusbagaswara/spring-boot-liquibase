@@ -6,8 +6,10 @@
                         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
 
 <!--    daftarin semua file change log yang meliputi DDL atau DML -->
-    <include file="classpath:db/changelog/db.changelog-20231107-001-create-table.xml"/>
-    <include file="classpath:db/changelog/db.changelog-20231107-002-insert-data.xml"/>
-    <include file="classpath:db/changelog/db.changelog-20231107-003-update-albert.xml"/>
-    <include file="classpath:db/changelog/db.changelog-20231107-004-delete-newton.xml"/>
+<!--    <include file="classpath:db/changelog/db.changelog-20231107-001.xml"/>-->
+    <include file="classpath:db/changelog/db.changelog-20231107-006.xml"/>
+    <include file="classpath:db/changelog/db.changelog-20231107-002.xml"/>
+    <include file="classpath:db/changelog/db.changelog-20231107-003.xml"/>
+    <include file="classpath:db/changelog/db.changelog-20231107-004.xml"/>
+    <include file="classpath:db/changelog/db.changelog-20231107-005.xml"/>
 </databaseChangeLog>
