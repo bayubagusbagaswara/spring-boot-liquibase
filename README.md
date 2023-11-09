@@ -59,3 +59,10 @@ spring.jpa.properties.hibernate.jdbc.lob.non_contextual_creation=true
 ```
 
 - db.username = diganti dengan nama tiap SERVICE
+
+# Catatan
+
+- ID changeSet harus berbeda
+- Jika data di table udah dihapus, maka tidak jadi masalah apabila kita menaruh query DELETE INSERT di liquibase
+- Kalau changeSet nya sudah di create di DATABASECHANGELOG, maka changeSet tersebut tidak akan dieksekusi lagi. Jika ingin dieksekusi lagi, maka harus ganti changeSet ID
+- Kalau mau reset ke changeSet mulai dari ID lama, maka harus di reset di table DATABASECHANGELOG
