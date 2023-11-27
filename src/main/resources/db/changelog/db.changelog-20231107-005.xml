@@ -7,7 +7,7 @@
                 http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
 
     <changeSet id="bagaswara5" author="Bayu Bagus Bagaswara">
-        <sqlFile path="../../sql/V20231107_002_Insert_Data_Ohm.sql" relativeToChangelogFile="true"/>
+        <sqlFile path="classpath:db/changelog/sql/V20231107_002_Insert_Data_Ohm.sql" relativeToChangelogFile="true"/>
     </changeSet>
 
 </databaseChangeLog>

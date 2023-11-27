@@ -8,7 +8,7 @@
 
     <changeSet id="bagaswara2" author="Bayu Bagus Bagaswara">
         <!-- DELETE ALL DATA EMPLOYEE -->
-        <sqlFile path="../../sql/V20231107_003_Delete_All_Data_Employees.sql" relativeToChangelogFile="true"/>
+        <sqlFile path="classpath:db/changelog/sql/V20231107_003_Delete_All_Data_Employees.sql" relativeToChangelogFile="true"/>
 
         <insert tableName="employees">
             <column name="name" value="Albert"/>

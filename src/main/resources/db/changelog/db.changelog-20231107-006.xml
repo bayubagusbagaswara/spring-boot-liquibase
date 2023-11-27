@@ -7,7 +7,8 @@
                 http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
 
     <changeSet id="bagaswara1" author="Bayu Bagus Bagaswara" context="example">
-        <sqlFile path="../../sql/V20231107_001_Create_Table_Employees.sql" relativeToChangelogFile="true"/>
+
+        <sqlFile path="classpath:db/changelog/sql/V20231107_001_Create_Table_Employees.sql" relativeToChangelogFile="true"/>
     </changeSet>
 
 </databaseChangeLog>
